@@ -57,14 +57,14 @@ def get_perfect_squares(n, k):
 
 
 def test_get_perfect_squares():
-    assert get_perfect_squares(7, 10) == 9
-    assert get_perfect_squares(2, 5) == 4
+    assert get_perfect_squares(7, 10) == [9]
+    assert get_perfect_squares(2, 5) == [4]
 
 def main():
     while True:
         print(test_is_palindrom())
         print(test_get_n_choose_k())
-       # print(test_get_perfect_squares())
+        print(test_get_perfect_squares())
         print("1.verifica daca un nr este palindrom")
         print("2.calculeaza combinari de n luate cate k")
         print("3.afisez toate elementele patrate perfecte din intervalul n k")
