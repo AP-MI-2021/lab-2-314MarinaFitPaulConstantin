@@ -49,15 +49,16 @@ def get_perfect_squares(n, k):
     :param k: numar intreg
     :return: afisare nr patrate perfecte
     """
+    lpp=[]
     for i in range(n, k + 1):
         if i**(.5) == int(i**(.5)):
-            print(i, end=" ")
+            lpp.append(i)
+    return lpp
 
-'''
+
 def test_get_perfect_squares():
     assert get_perfect_squares(7, 10) == 9
     assert get_perfect_squares(2, 5) == 4
-'''
 
 def main():
     while True:
